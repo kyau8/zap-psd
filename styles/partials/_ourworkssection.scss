@@ -1,0 +1,117 @@
+/* OUR WORK SECTION STYLES*/
+/* Our works button banner styles */
+.our-works-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
+    margin: 20px auto;
+    a {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
+
+.button--small {
+    a {
+        text-align: center;
+        display: inline-block;
+        font-size: 0.6rem;
+        letter-spacing: 0;
+        padding: 10px 20px;
+        height: 35px;
+        border-color: $secondary-color;
+        &:hover {
+            border-color: $accent-color;
+            background: white;
+        }
+    }
+}
+
+@media (max-width: $break-large) {
+    .our-works-buttons {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+}
+@media (max-width: 800px) {
+    .our-works-buttons {
+        width: 60%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .button--small a {
+        width: 120px;
+        margin: 10px;
+    }
+    .button--small:first-child a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .button--small:last-child a {
+        width: 50px;
+    }
+}
+/* Our works photogrid styles */
+.our-works-photogrid { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    figure {
+        position: relative;
+        img {
+            display: block;
+            @media (max-width: $break-small) {
+                width: 300px;
+            }
+        }
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            .photo-overlay {
+                display: none;
+                @media (max-width: 500px) {
+                    display: block;
+                }
+            }
+            .photo-category {
+                font-family: $secondary-font;
+                font-style: italic;
+                font-size: 1.0rem;
+                letter-spacing: 1px;
+                padding: 20px;
+                color: rgba(255,255,255,0.7);
+                text-shadow: black 0 0 30px;
+            }
+            .photo-info {
+                font-family: $primary-font;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-size: 1.0rem;
+                color: rgba(255,255,255,0.7);
+                text-shadow: $primary-color 0 0 20px;
+            }
+        }
+    }
+}
+
+.our-works-photogrid {
+    figure:hover .photo-overlay,
+    figure:focus .photo-overlay{
+        display: inline-block;
+    }
+}
+
+

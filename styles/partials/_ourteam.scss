@@ -1,0 +1,61 @@
+/* COMPANY STATS BANNER STYLES */
+.company-details {
+    background: $primary-color;
+}
+
+.company-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width: 1570px) {
+        justify-content: center;
+    }
+    @media (max-width: $break-medium) {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media (max-width: 501px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+.company-stats__details {
+    p {
+        text-align: center;
+        color: white;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 3.0rem;
+        padding: 20px 0;
+        @media (max-width: 1570px) {
+        margin: 0 20px;
+        @media (max-width: 501px) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: 396px) {
+            padding: 10px 0;
+            font-size: 2.0rem;
+        }
+    }
+        span {
+            display: block;
+            font-size: 1.2rem;
+            font-family: $secondary-font;
+            color: $secondary-color;font-style: italic;
+            padding: 20px 0;
+            @media (max-width: 501px) {
+                display: inline;
+                padding: 0 10px;
+            }
+            @media (max-width: 396px) {
+            padding: 0;
+            display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/* GENERAL SECTION HEADER STYLES*/
+.section-header {
+    text-align: center;
+    h5 {
+        padding: 20px;
+    }
+}
+.section-header-img {
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+    z-index: 50;
+    display: inline-block;
+    background: white;
+}
+.section-header div::after {
+    content: "";
+    width: 90px;
+    border-top: 1px solid rgba(134, 132, 132, 0.308);
+    display: block;
+    height: 9px;
+    position: absolute;
+    left: 50%;
+    z-index: 40;
+    margin-top: -9px;
+    transform: translateX(-50%);
+}

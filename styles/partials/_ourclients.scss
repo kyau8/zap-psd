@@ -1,0 +1,95 @@
+/* CLIENT TESTIMONIALS STYLES */
+/* Client images styles */
+.client-images-grid {
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    li {
+        padding: 20px;
+        @media (max-width: 560px) {
+            padding: 10px;
+        }
+    }
+}
+
+@media (max-width: $break-small) {
+    .client-image-one {
+        display: none;
+    }
+    .client-image-three {
+        display: none;
+    }
+}
+
+/*Client information styles */
+.client-name {
+    font-family: $primary-font;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding: 15px 0 5px 0;
+    text-align: center;
+}
+
+.client-position {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 0.7rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.triangle-icon {
+    padding: 5px;
+    position: relative;
+    z-index: 50;
+    background: white;
+}
+
+.section-image {
+    display: flex;
+    margin: auto auto;
+    width: 45px;
+}
+
+.section-image::before {
+    content: "";
+    width: 110px;
+    border-top: 1px solid rgba(134, 132, 132, 0.308);
+    display: block;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    z-index: 40;
+    margin-top: 10px;
+    transform: translateX(-50%);
+}
+
+.client-quote {
+    text-align: center;
+    font-family: $secondary-font;
+    font-size: 1.0rem;
+    font-style: italic;
+    color: $secondary-color;
+    line-height: 25px;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+}
+
+.client-hover-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        i {
+            padding: 5px;
+            color: $secondary-color;
+            &:hover {
+                color:$accent-color;
+        }
+    }
+}
