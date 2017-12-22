@@ -9,9 +9,9 @@
             font-style: italic;
         }
     }
-    @media (max-width: 420px) {
-        padding: 0 10px;
-    }
+    // @media (max-width: 420px) {
+    //     padding: 0 10px;
+    // }
 }
 
 .all-pricing-plans {
@@ -20,10 +20,10 @@
     justify-content: space-between;
     text-align: center;
     font-family: $primary-font;
-    @media (max-width: 1570px) {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    // @media (max-width: 1570px) {
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
 }
 
 .price-plan--button {
@@ -42,9 +42,9 @@
 .price-plan {
     border: 1px solid $secondary-color;
     transition: all 0.5s;
-    @media (max-width: 1570px) {
-        margin: 15px;
-    }
+    // @media (max-width: 1570px) {
+    //     margin: 15px;
+    // }
     &:hover {
         transform: scale(1.1);
         box-shadow: 0.5px 1px 10px $accent-color;
@@ -106,8 +106,8 @@
     font-style: italic;
 }
 
-@media (max-width: $break-large) {
-    .price-info {
-        display: none;
-    }
-}
+// @media (max-width: $break-large) {
+//     .price-info {
+//         display: none;
+//     }
+// }

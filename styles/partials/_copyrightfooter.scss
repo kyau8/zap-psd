@@ -9,12 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 1570px) {
-        padding: 0 10px;
-    }
-        @media (max-width: $break-large) {
-                flex-direction: column-reverse;
-        }
+    // @media (max-width: 1570px) {
+    //     padding: 0 10px;
+    // }
+    //     @media (max-width: $break-large) {
+    //             flex-direction: column-reverse;
+    //     }
 }
 
 .copyright {
@@ -22,12 +22,12 @@
     letter-spacing: 1px;
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.158);
-    @media (max-width: $break-large) {
-                padding-top: 10px;
-        }
-    @media (max-width: 500px) {
-            text-align: center;
-        }
+    // @media (max-width: $break-large) {
+    //             padding-top: 10px;
+    //     }
+    // @media (max-width: 500px) {
+    //         text-align: center;
+    //     }
 }
 
 .footer-social-nav {
@@ -42,8 +42,8 @@
         &:hover {
             color: $accent-color;
         }
-        @media (max-width: 500px) {
-            padding: 0 15px;
-        }
+        // @media (max-width: 500px) {
+        //     padding: 0 15px;
+        // }
     }
 }

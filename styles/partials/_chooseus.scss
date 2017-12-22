@@ -1,27 +1,26 @@
 /* CHOOSE US SECTION STYLES */
-.services-box {
+.servicesBox {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    @media (max-width: 1300px) {
-       margin: 20px;  
-    }
-    @media (max-width: $break-medium) {
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        align-items: center;
-    }
+    // @media (max-width: 1300px) {
+    //    margin: 20px;  
+    // }
+    // @media (max-width: $break-medium) {
+    //     flex-direction: column-reverse;
+    //     justify-content: flex-start;
+    //     align-items: center;
+    // }
 }
 
-@media (max-width: $break-small) {
-    .services-image {
-        width: 310px;
-        margin: 0 auto;
-    }
-}
+// @media (max-width: $break-small) {
+//     .services-image {
+//         width: 310px;
+//         margin: 0 auto;
+//     }
+// }
 
-.services-text p:nth-of-type(2) {
+.servicesText p:nth-of-type(2) {
     text-transform: uppercase;
     font-family: $primary-font;
     font-size: 0.6rem;
@@ -34,40 +33,39 @@
         letter-spacing: 0;
     }
 }
+
+.servicesText h4 {
+    margin: 1.5rem 0;
+}
+
 .chart {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     margin: 30px 0;
-    @media (max-width: 1300px) {
-        margin: 0;
-    }
+    // @media (max-width: 1300px) {
+    //     margin: 0;
+    // }
 }
-.chart__item {
+.chartItem {
     width: 33%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin: 10px 0;
-    @media (max-width: $break-large) {
-        width: 50%;
-    }
-    @media (max-width: 782px) {
-        width: 100%;
-        margin: 0 15px;
-        justify-content: flex-start;
-    }
+    // @media (max-width: $break-large) {
+    //     width: 50%;
+    // }
+    // @media (max-width: 782px) {
+    //     width: 100%;
+    //     margin: 0 15px;
+    //     justify-content: flex-start;
+    // }
 }
 
-.chart__item {
-    div {
-        i {
-            font-size: 2.0rem;
-            padding: 8px 25px 25px 25px;
-        }
-    }
+.chartItem i {
+    font-size: 2.0rem;
+    padding: 8px 25px 25px 25px;  
 }
 

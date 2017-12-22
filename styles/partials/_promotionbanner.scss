@@ -1,47 +1,48 @@
 /* PROMOTION BANNER STYLES */
-.promotion-banner {
+.promotionBanner {
     background: $primary-color;
-    @media (max-width: 710px) {
-        padding: 50px 10px;
-    }
+    // @media (max-width: 710px) {
+    //     padding: 50px 10px;
+    // }
 }
 
-.banner-info {
+.bannerInfo p:first-child {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: 1px;
+    // @media (max-width: 1570px) {
+    //     margin-bottom: 25px;
+    //     text-align: center;
+    // }
+    // span {
+    //     color: $accent-color;
+    // }
+}
+
+.bannerInfo {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 1170px) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .banner-tagline {
-        color: $secondary-color;
-        font-family: $secondary-font;
-        font-size: 1.6rem;
-        font-style: italic;
-        letter-spacing: 1px;
-        @media (max-width: 1570px) {
-            margin-bottom: 25px;
-            text-align: center;
-        }
-        span {
-            color: $accent-color;
-        }
-    }
-    .button a {
-        background: $accent-color;
-        color: $secondary-color;
-        &:hover {
-            background: $secondary-color;
-            color: $accent-color;
-        }
+    // @media (max-width: 1170px) {
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
+}
+
+.bannerInfo .button a {
+    background: $accent-color;
+    color: $secondary-color;
+    &:hover {
+        background: $secondary-color;
+        color: $accent-color;
     }
 }
-@media (max-width: 1570px) {
-    .banner-info .button {
-        margin: 0 10px;
+// @media (max-width: 1570px) {
+//     .banner-info .button {
+//         margin: 0 10px;
     
-    }
-}
+//     }
+// }
