@@ -1,16 +1,7 @@
 /* HEADER STYLES */
-.main-header {
+.mainHeader {
     height: 100vh;
     background: url(../images/header-background.jpg) fixed center/cover;
-    // @media (max-width: 1166px) {
-        //     .image-box {
-            //         margin-left: 25px;
-            //     }
-            // }
-            // @media (max-width: 360px) {
-                //     .image-box {
-                    //         margin: 10px;
-                    //     }
 }
                 
 /* Navigational header styles */
@@ -19,24 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @media (max-width: $break-large) {
-    //     justify-content: flex-start;
-    //     padding-top: 30px;
-    // }
-    // @media (max-width: 360px) {
-    //     flex-wrap: wrap;
-    //     justify-content: center;
-    //     align-items: center;
-    //     width: 80%;
-    //     margin: 0 auto;
-    // }
 }
-
-// @media (max-width: 360px) {
-//     .company-logo {
-//         width: 200px;
-//     }
-// }
 
 .menu {
     width: 65%;
@@ -46,18 +20,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // a {
-    //     color: white;
-    // }
-    // @media (max-width: $break-large) {
-    //         position: absolute;
-    //         flex-direction: column;
-    //         align-items: flex-start;
-    //         background: $accent-color;
-    //         padding: 0;
-    //         display: none;
-    //         top: 100%;
-    // }
+    @media (max-width: 940px) {
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            background: $accent-color;
+            padding: 0;
+            display: none;
+            top: 100%;
+    }
 }
 
 .mainNav li a {
@@ -74,16 +45,7 @@ nav {
 }
 
 /*Checkbox navigation styles */
-// @media (max-width: $break-large) {
-//     .menu {
-//         position: relative;
-//     }
-//     .toggle {
-//         margin: 0 20px;
-//     }
-// }
-
-input#toggle:checked + .main-nav {
+input#toggle:checked + .mainNav {
     display: inline;
 }   
 
@@ -94,13 +56,13 @@ input#toggle {
 
 label {
     display: none; 
-        // @media (max-width: $break-large) {
-        //     display: block;
-        //     color: white;
-        //     font-size: 0.8rem;
-        //     margin: 10px;
-        //     font-family: $primary-font;
-        // }
+        @media (max-width: 940px) {
+            display: block;
+            color: white;
+            font-size: 0.8rem;
+            margin: 10px;
+            font-family: $primary-font;
+        }
         // @media (max-width: $break-medium) {
         //     font-size: 1.0rem;
         // }
@@ -117,11 +79,11 @@ label {
         display: none;
         position: absolute;
         padding: 5px 0;
-        // @media (max-width:$break-large) {
-        //     top: 45%;
-        //     right: -83%;
-        //     background: $primary-color;
-        // }
+        @media (max-width:940px) {
+            top: 45%;
+            right: -83%;
+            background: $primary-color;
+        }
         li {
             a {
                 display: inline-block;
@@ -133,9 +95,6 @@ label {
 
 .subNav:hover ul {
     display: block;
-    // @media (max-width:$break-large) {
-        
-    // }
 }
 
 .subNav a i {
@@ -148,13 +107,6 @@ label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @media (max-width: 1166px) {
-    //     margin-right: 25px;
-    // }
-    // @media (max-width: $break-medium) {
-    //     width: 80px;
-    //     margin: 0;
-    // }
 }
 
 .iconNav li {
@@ -166,10 +118,6 @@ label {
             color: $accent-color;
         }
     } 
-    // @media (max-width: $break-medium) {
-    //     margin: 10px;
-    //     font-size: 1.0rem;
-    // }
 }
 
 /* HEADER BANNER STYLES */
@@ -180,16 +128,7 @@ label {
         align-items: center;
         text-align: center;
         line-height: 65px;
-        // @media (max-width: $break-large) {
-        //     padding-top: 80px;
-        // }
-        // @media (max-width: $break-medium) {
-        //     justify-content: center;
-        //     padding-top: 60px;
-        // }
-        // @media (max-width: $break-small) {
-        //     padding-top: 0;
-        // }
+        width: 100%;
 }
 
 .headerText {
@@ -197,9 +136,6 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // @media (max-width: $break-medium) {
-    //     width: 100%;
-    // }
 }
 
 .headerText p {
@@ -207,23 +143,10 @@ label {
     font-family: $primary-font;
     font-size: 3.0rem;
     font-weight: 700;
-    // @media (max-width: $break-large) {
-    //     font-size: 2.5rem;
-    // }
-    // @media (max-width: 480px) {
-    //     font-size: 2.1rem;
-    //     // border: 1px solid lime;
-    // }
-    // @media (max-width: 320px) {
-    //     font-size: 1.8rem;
-    // }
 }
 
 .headerArrow .fa {
     font-size: 1.2rem;
-    // @media (max-width: $break-medium) {
-    //     display: none;
-    // }
 }
 
 .fa-chevron-left, 
@@ -236,18 +159,6 @@ label {
 
 .websiteTitle {
                 font-size: 6.0rem;
-                // @media (max-width: 620px) {
-                //     font-size: 4.5rem;
-                // }
-                // @media (max-width: 480px) {
-                //     font-size: 3.5rem;
-                //     // border: 1px solid goldenrod;
-                // }
-                // @media (max-width: 320px) {
-                //     font-size: 3.0rem;
-                //     display: inline-block;
-                //     margin-top: -10px;
-                // }
 }
 
 .slogan { 
@@ -271,4 +182,91 @@ label {
     }
 }
 
+@media (max-width: 1200px) {
+    nav {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
 
+@media (max-width: 800px) {
+    .mainNav {
+        border: 1px solid green;
+        width: 100%;
+    }
+    .menu {
+        position: relative;
+        width: 60%;
+        text-align: right;
+    }
+    .toggle {
+        margin: 0 20px;
+    }
+    .iconNav {
+        width: 8%;
+    }
+}
+
+@media (max-width: 705px) {
+    .headerArrow {
+        display: none;
+    }
+    .headerBanner ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .websiteTitle {
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 565px) {
+    .iconNav {
+        width: 20%;
+        margin-left: 5%;
+    }
+    .iconNav i {
+        font-size: 1.2rem;
+    }
+    #toggle {
+        font-size: 1.2rem;
+    }
+    .websiteTitle {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .iconNav {
+        margin-left:2%;
+        width: 30%;
+    }
+}
+
+@media (max-width: 370px) {
+    .headerText p {
+        font-size: 2.0rem;
+    }
+    .websiteTitle {
+        font-size: 2.5rem;
+    }
+    #toggle {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 345px) {
+    .iconNav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .iconNav i {
+        padding-bottom: 10px;
+        font-size: 1.0rem;
+    }
+    #toggle {
+        font-size: 0.8rem;
+    }
+}

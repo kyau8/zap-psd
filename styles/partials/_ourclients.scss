@@ -7,19 +7,7 @@
 
 .clientGrid li {
     padding: 20px;
-    // @media (max-width: 560px) {
-    //     padding: 10px;
-    // }
 }
-
-// @media (max-width: $break-small) {
-//     .client-image-one {
-//         display: none;
-//     }
-//     .client-image-three {
-//         display: none;
-//     }
-// }
 
 /*Client information styles */
 .client {
@@ -89,5 +77,21 @@
     color: $secondary-color;
     &:hover {
         color: $accent-color;
+    }
+}
+
+@media (max-width: 570px) {
+    .clientGrid {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .clientGrid li:first-child {
+        display: none;
+    }
+    .clientGrid li:last-child {
+        display: none;
     }
 }

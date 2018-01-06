@@ -1,9 +1,9 @@
 /* PROMOTION BANNER STYLES */
 .promotionBanner {
     background: $primary-color;
-    // @media (max-width: 710px) {
-    //     padding: 50px 10px;
-    // }
+    @media (max-width: 710px) {
+        padding: 50px 10px;
+    }
 }
 
 .bannerInfo p:first-child {
@@ -12,24 +12,21 @@
     font-size: 1.6rem;
     font-style: italic;
     letter-spacing: 1px;
-    // @media (max-width: 1570px) {
-    //     margin-bottom: 25px;
-    //     text-align: center;
-    // }
-    // span {
-    //     color: $accent-color;
-    // }
+    @media (max-width: 1570px) {
+        margin-bottom: 25px;
+        text-align: center;
+    }
 }
 
 .bannerInfo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @media (max-width: 1170px) {
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+    @media (max-width: 1170px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .bannerInfo .button a {
@@ -40,9 +37,9 @@
         color: $accent-color;
     }
 }
-// @media (max-width: 1570px) {
-//     .banner-info .button {
-//         margin: 0 10px;
+@media (max-width: 1570px) {
+    .banner-info .button {
+        margin: 0 10px;
     
-//     }
-// }
+    }
+}

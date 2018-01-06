@@ -6,9 +6,6 @@ $accent-color: #eeb013;
 $light-accent: rgba(209, 203, 203, 0.9);
 $primary-font: "Montserrat", sans-serif;
 $secondary-font: "Crimson Text", serif;
-$break-small: 480px;
-$break-medium: 768px;
-$break-large: 940px;
 
 /* Main global styles */
 body {
@@ -34,12 +31,12 @@ li {
         max-width: 1920px;
 }
 
-.inner-wrapper {
-                margin: 0 auto;
-                max-width: 1125px;
+.innerWrapper {
+        margin: 0 auto;
+        max-width: 1125px;
 }
 
-.section-text {
+.sectionText {
     font-size: 1.0rem;
     font-family: $primary-font;
     color: $secondary-color;

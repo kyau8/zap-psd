@@ -3,39 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: space-between;
-    // @media (max-width: $break-small) {
-    //     margin: 15px;
-    // }
 } 
 
 .logoBox {
         padding: 0 100px;
-        // @media (max-width: $break-large) {
-        //     padding: 0 50px;
-        // }
-        // @media (max-width: $break-medium) {
-        //     padding: 0 25px;
-        // }
-        // @media (max-width: $break-small) {
-        // display: none;
-        // }
     }
-
-// @media (max-width: 1172px) {
-//     .section-text {
-//         padding-right: 30px;
-//     }
-// }
 
 .websiteConcept {
     display: flex;
     justify-content: space-between;
-    // @media (max-width: 1300px) {
-    //     flex-direction: column;
-    //     align-items: flex-start;
-    //     justify-content: space-between;
-    //     padding-left: 10px;
-    // }
 }
 
 .conceptText h4 {
@@ -71,18 +47,66 @@
     margin-right: 10px;
     position: relative;
     top: 10px;
-    // @media (max-width: 1300px) {
-    //     margin: 10px 10px 0;
-    // }
 }
 
 
 .large {
     margin-top: 80px;
-    // @media (max-width: $break-small) {
-    //     display: block;
-    //     text-align: center;
-    //     margin-top: 40px;
-    // }
 }
 
+@media (max-width: 1200px) {
+    .sectionText {
+        margin-right: 2rem;
+    }
+    .websiteConcept {
+        justify-content: flex-start;
+    }
+    .websiteConcept li {
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logoBox {
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 888px) {
+    .websiteConcept {
+        flex-wrap: wrap;
+    }
+    .websiteConcept li {
+        width: 45%;
+        margin: 6px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .websiteConcept {
+        flex-direction: column;
+    }
+    .websiteConcept li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .logoBox {
+        display: none;
+    }
+    .websiteIntroBox {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .conceptText .button {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 372px) {
+    .websiteConcept {
+        width: 90%;
+    }
+}
