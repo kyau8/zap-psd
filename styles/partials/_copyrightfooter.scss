@@ -43,7 +43,6 @@
 @media (max-width: 530px) {
     .copyrightFooter {
         flex-direction: column;
-        border: 1px solid goldenrod;
     }
     .copyrightFooter > li:first-child {
         order: 1;
@@ -53,7 +52,6 @@
     .footerSocialNav {
         width: 100%;
         margin: 0 auto;
-        border: 1px solid red;
     }
 }
 
